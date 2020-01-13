@@ -1,0 +1,34 @@
+{
+  "name": "meteor-tuts",
+  "private": true,
+  "scripts": {
+    "start": "meteor npm i && meteor run",
+    "debug": "meteor run --inspect",
+    "test": "meteor test --driver-package meteortesting:mocha --settings settings.json",
+    "lint": "eslint . --ext .jsx --fix"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.jsx": "eslint --fix"
+  },
+  "pre-commit": "lint-staged",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.36",
+    "Package": "0.0.1",
+    "bcrypt": "^3.0.6",
+    "history": "^4.7.2",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.20.1",
+    "react": "^16.2.0",
+    "simpl-schema": "^1.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-meteor": "^6.0.0",
+    "eslint-plugin-react": "^7.14.3",
+    "lint-staged": "^9.2.5",
+    "pre-commit": "^1.2.2"
+  }
+}

@@ -1,0 +1,7 @@
+<template name="postEdit">
+  <div>
+    {{> quickForm id="edit-post" doc=post omitFields="userId" schema=postsSchema
+    type="method" meteormethod="post.edit"}}
+    <button><a href="/posts">Back to posts</a></button>
+  </div>
+</template>

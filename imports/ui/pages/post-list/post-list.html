@@ -1,0 +1,12 @@
+<template name="postList">
+  <div className="post">
+    {{#each Posts}}
+    <div>
+      <p>Post id: {{_id}}</p>
+      <p>Post title: {{title}}, Post Description: {{description}}</p>
+      <button><a href="/posts/edit/{{_id}}">Edit post</a></button>
+    </div>
+    {{/each}}
+    <button><a  href="/posts/create">Create a new post</a></button>
+  </div>
+</template>
