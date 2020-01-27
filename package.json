@@ -5,30 +5,36 @@
     "start": "meteor npm i && meteor run",
     "debug": "meteor run --inspect",
     "test": "meteor test --driver-package meteortesting:mocha --settings settings.json",
-    "lint": "eslint . --ext .jsx --fix"
+    "lint": "eslint --cache --ext .js --ignore-path .eslintignore .",
+    "lint:eslint:fix": "eslint --ext .js --ignore-path .eslintignore --fix .",
+    "lint:staged": "lint-staged",
+    "prettify": "prettier --write '**/*.js' '**/*.jsx'"
   },
-  "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.jsx": "eslint --fix"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
-  "pre-commit": "lint-staged",
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.36",
+    "@babel/runtime": "^7.8.3",
     "Package": "0.0.1",
-    "bcrypt": "^3.0.6",
-    "history": "^4.7.2",
+    "bcrypt": "^3.0.7",
+    "history": "^4.10.1",
     "meteor-node-stubs": "^0.4.1",
-    "moment": "^2.20.1",
-    "react": "^16.2.0",
-    "simpl-schema": "^1.4.2"
+    "moment": "^2.24.0",
+    "simpl-schema": "^1.5.6"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-meteor": "^0.1.1",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-import-resolver-meteor": "^0.4.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-meteor": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.14.3",
-    "lint-staged": "^9.2.5",
-    "pre-commit": "^1.2.2"
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1"
   }
 }
