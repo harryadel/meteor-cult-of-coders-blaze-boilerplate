@@ -47,3 +47,6 @@ cultofcoders:grapher
 dburles:collection-helpers
 matb33:collection-hooks@1.0.1!
 mdg:validated-method
+peerlibrary:subscription-scope
+peerlibrary:extend-publish@0.6.0!
+coffeescript@2.4.1!
