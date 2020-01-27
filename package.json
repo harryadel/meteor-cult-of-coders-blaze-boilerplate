@@ -1,5 +1,5 @@
 {
-  "name": "meteor-tuts",
+  "name": "meteor-cult-of-coders-blaze-boilerplate",
   "private": true,
   "scripts": {
     "start": "meteor npm i && meteor run",
