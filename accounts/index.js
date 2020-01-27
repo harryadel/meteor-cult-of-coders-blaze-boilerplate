@@ -1,10 +1,10 @@
 AccountsTemplates.configure({
-    defaultLayout: 'main-layout',
-    defaultContentRegion: 'main',
-    // defaultLayoutRegions: {
-    //     nav: 'navbar',
-    //     footer: 'footer'
-    // },
+  defaultLayout: 'main-layout',
+  defaultContentRegion: 'main',
+  // defaultLayoutRegions: {
+  //     nav: 'navbar',
+  //     footer: 'footer'
+  // },
 });
 
 AccountsTemplates.configureRoute('signIn');

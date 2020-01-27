@@ -1,21 +1,21 @@
-import PostSchema from "/db/posts/schema";
+import PostSchema from '/db/posts/schema';
 import Posts from '/db/posts/collection.js';
-import "./post-edit.html";
+import './post-edit.html';
 
 Template.postEdit.helpers({
-    postsSchema() {
-        return PostSchema;
-    },
-    post() {
-        return Posts.findOne({});
-    }
+  postsSchema() {
+    return PostSchema;
+  },
+  post() {
+    return Posts.findOne({});
+  },
 });
 
-AutoForm.addHooks("edit-post", {
-    onSuccess: function(formType, result) {
-        alert("Post edited!");
-    },
-    onError: function(formType, error) {
-        alert(error.reason);
-    }
+AutoForm.addHooks('edit-post', {
+  onSuccess() {
+    alert('Post edited!');
+  },
+  onError() {
+    alert(error.reason);
+  },
 });
