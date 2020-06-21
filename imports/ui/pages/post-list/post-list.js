@@ -1,7 +1,7 @@
 import './post-list.html';
 import { Posts } from '/db';
 
-Template.postList.onCreated(function() {
+Template.postList.onCreated(function () {
   this.subscribe('posts');
 });
 

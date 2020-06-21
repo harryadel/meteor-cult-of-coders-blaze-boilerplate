@@ -16,25 +16,26 @@
     }
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.3",
+    "@babel/runtime": "^7.10.3",
     "Package": "0.0.1",
-    "bcrypt": "^3.0.7",
-    "history": "^4.10.1",
-    "meteor-node-stubs": "^0.4.1",
-    "moment": "^2.24.0",
-    "simpl-schema": "^1.5.6"
+    "bcrypt": "^5.0.0",
+    "history": "^5.0.0",
+    "meteor-node-stubs": "^1.0.0",
+    "moment": "^2.27.0",
+    "npm-check-updates": "^7.0.1",
+    "simpl-schema": "^1.7.3"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.3.0",
     "eslint-config-meteor": "^0.1.1",
-    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-meteor": "^0.4.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-meteor": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.14.3",
-    "husky": "^4.2.1",
-    "prettier": "^1.19.1",
-    "prettier-eslint": "^9.0.1"
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-meteor": "^7.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0"
   }
 }
